@@ -189,6 +189,10 @@ noto serif, times new roman, serif
   justify-content: center;
 }
 
+.form__label {
+  margin: 0;
+}
+
 .form__label_type_checkbox {
   display: flex;
   justify-content: flex-start;
