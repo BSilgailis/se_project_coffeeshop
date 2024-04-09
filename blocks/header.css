@@ -9,37 +9,7 @@
   padding: 30px 80px 40px 30px;
   color: #000000;
   background: center / cover no-repeat url("../images/background_header.svg");
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 183px;
-}
-
-.nav__logo {
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  column-gap: 20px;
-  margin: 0;
-}
-
-.nav__link {
-  font-weight: 500;
-  text-decoration: none;
-  color: #000000;
-  transition: color 0.2s ease-in-out;
-}
-
-.nav__link:hover {
-  color: #2f80ed;
+  z-index: 1;
 }
 
 .header__title {
@@ -53,6 +23,8 @@
   flex-direction: column;
   z-index: 1;
 }
+
+/* Creates italicized part of header  */
 
 .header__span-accent {
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -71,24 +43,32 @@
 }
 
 .header__image {
-  max-width: 646px;
+  width: 646px;
   position: absolute;
   top: 124px;
   right: 5px;
+  z-index: -1;
 }
+
 .header__footer {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__paragraph {
   font-weight: 500;
   color: #838383;
   margin: 0 50px;
+  width: fit-content;
 }
 
-.header__paragraph:last-of-type {
-  position: absolute;
-  right: 80px;
-  bottom: 40px;
-  margin: 0;
+/* Used to align last section of footer */
+
+.header__paragraph-divider {
+  display: flex;
+}
+
+.header__paragraph:last-child {
+  margin: 0 0 0 auto;
 }

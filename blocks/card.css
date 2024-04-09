@@ -9,7 +9,7 @@
   line-height: 30px;
 }
 
-.card ul {
+.card__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -21,9 +21,11 @@
   font-family: "Noto Serif", "Times New Roman", serif;
 }
 
-ul .card__list-item:last-child {
+.card__list-item:last-of-type {
   margin-bottom: 0;
 }
+
+/* Middle line between menu item and price */
 
 .card__list-divider {
   flex-grow: 1;
