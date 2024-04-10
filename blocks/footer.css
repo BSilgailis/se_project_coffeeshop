@@ -2,7 +2,7 @@
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   position: relative;
   color: #ffffff;
-  padding-bottom: 60px;
+  padding: 80px 60px;
 }
 
 .footer__logo {
@@ -24,7 +24,6 @@
 .footer__content {
   display: flex;
   justify-content: space-between;
-  margin: 0 80px 0;
 }
 
 .footer__list {
@@ -50,5 +49,5 @@
 }
 
 .footer__copyright {
-  margin: 108px 0 0 80px;
+  margin: 108px 0 0px;
 }
